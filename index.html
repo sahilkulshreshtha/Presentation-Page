@@ -66,6 +66,21 @@
       </a>
     </div>
    </section>
-  
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script>
+    //smoothscrolling
+    $('.btn').on('click', function(event) {
+      if (this.hash !== '') {
+        event.preventDefault();
+        const hash=this.hash;
+        $('html,body').animate (
+          {
+            scrollTop: $(hash).offset().top
+          },
+          800
+        );
+      }
+    });
+  </script>
 </body>
 </html>
