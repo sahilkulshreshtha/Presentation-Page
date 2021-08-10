@@ -3,7 +3,7 @@
   --page-2-color: #e4d8bb;
   --page-3-color:#8c0ba3;
   --page-4-color:#FFAA4C;
-  --animate-speed: 1s;
+  --animate-speed: 2s;
 }
 
 
@@ -89,8 +89,8 @@ body {
 
 
 #page-1 p {
-  transform: translateX(-1200px);
-  animation: para var(--animate-speed) forwards ease-in;
+  transform: translateX(-1800px);
+  animation: para var(--animate-speed) forwards ease-in 2s;
 }
 
 @keyframes para {
